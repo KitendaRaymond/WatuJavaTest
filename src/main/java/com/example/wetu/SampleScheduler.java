@@ -27,7 +27,8 @@ public class SampleScheduler
 
     private static final Logger logger = LoggerFactory.getLogger(SampleScheduler.class);
 
-   // @Scheduled(fixedDelay = 60000)
+    //Run every 60 seconds --- 1 minute
+    @Scheduled(fixedDelay = 60000)
     public void processFile()
     {
         boolean runOperation = false;
